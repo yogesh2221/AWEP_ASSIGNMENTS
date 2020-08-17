@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-image: url(https://picsum.photos/id/30/1200/1400);
+            height: 100%;
+            background-size: cover;
+
+           }
+        .container {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+            /* margin */
+        }
+
+        .container li {
+
+            list-style: none;
+            margin: 5px 0px 15px 0px;
+            
+        }
+
+        input {
+
+            height: 20px;
+            padding-left: 5px;
+        }
+
+        label {
+
+            color: black;
+        }
+
+        .container ul {
+
+
+            padding: 50px 50px 50px 50px;
+            background: transparent;
+            border-radius: 10px;
+            box-shadow: 6px 6px 8px black;
+            border: 1px solid white;
+
+        }
+
+        h3 {
+
+            margin-bottom: 50px;
+            text-align: center;
+            color: white;
+            font-family: cursive;
+
+        }
+
+        #submit {
+
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            height: 25px;
+            width: 180px;
+            background-color: white;
+            border: 1px solid purple;
+            border-radius: 10px;
+        }
+
+        #submit:hover {
+
+            background-color: purple;
+            border: 1px solid white;
+            color: white;
+        }
+    </style>
+    <script src="1.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <ul>
+            <h3>Login Form</h3>
+            
+            <form method="POST" onsubmit=" return onvalidation()">
+                <label for="">Username</label>
+                <li><input id="emailid" type="email"  required></li>
+                <label for="">Number</label>
+                <li><input id="numberid" type="number" required ></li>
+                <label for="">Password</label>
+                <li><input id="passid" type="password"  required></li>
+                <label for="">Confirm Password</label>
+                <li><input id="cpassid" type="password"  required></li>
+                <li><input id="submit" type="submit" value="Submit"></li>
+            </form>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
